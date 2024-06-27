@@ -4,7 +4,8 @@ Plotly doesn't have its own grapher/viewer for voxel data (see in references bel
 
 ## Usage
 
-1. Open the `chair.npy.gz` file, which contains a list of chair voxels from ModelNet10. Alternatively, get the path to your .npy/voxel data file
+1. Open the demo/example `chair.npy.gz` file, which contains a list of chair voxels from ModelNet10. Alternatively, get the path to your .npy/voxel data file
+- Note: this code is intended to work for voxels with either 0 or 1s; to customize for other values, edits can be made to `VoxelData.py`
 2. In `run.py`, either change the voxel data or keep it as is for demo purposes
 3. Run the `run.py` file and navigate to http://127.0.0.1:8050/ on your browser
 
