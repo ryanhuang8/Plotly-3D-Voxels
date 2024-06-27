@@ -13,7 +13,7 @@ Plotly doesn't have its own grapher/viewer for voxel data (see in references bel
 The plot is a nice approximation as shown here:
 ![Alt text](example.png?raw=true "Chair")
 
-If you want a better plotting, perhaps check out (it takes ~5 mins to render, though): https://github.com/olive004/Plotly-voxel-renderer
+If you want a better plotting, perhaps check out (takes longer/approx ~5 mins to render): https://github.com/olive004/Plotly-voxel-renderer
 
 ## References
 
