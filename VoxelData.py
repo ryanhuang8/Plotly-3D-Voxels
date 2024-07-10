@@ -38,11 +38,12 @@ class VoxelData:
         return vertices, faces
     
     def get_surface_voxels(self):
+        print(self.voxel_grid.shape)
         surface_voxels = []
         for x in range(0, self.voxel_grid.shape[0] - 1):
             for y in range(0, self.voxel_grid.shape[1] - 1):
                 for z in range(0, self.voxel_grid.shape[2] - 1):
-                    if self.voxel_grid[x, y, z] == 1:
+                    if self.voxel_grid[x, y, z] != 0:
                         if (self.voxel_grid[x-1, y, z] == 0 or self.voxel_grid[x+1, y, z] == 0 or
                             self.voxel_grid[x, y-1, z] == 0 or self.voxel_grid[x, y+1, z] == 0 or
                             self.voxel_grid[x, y, z-1] == 0 or self.voxel_grid[x, y, z+1] == 0):
